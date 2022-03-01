@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Accordion Collapse</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+  	.accordion .btn
+  	{
+  		background: green;
+  		color: #fff;
+  	}
+  	.accordion .btn.collapsed
+  	{
+  		background: blue;
+
+  	}
+</style>
+</head>
+<body>
+
+<div class="container">
+	<div class="row py-3 justify-content-center">
+		<div class="col-md-6 ">
+			
+<div class="accordion" id="accordionExample">
+	<div class="card">
+		<div class="card-header">
+
+<button class="btn btn-link btn-block text-left" data-toggle="collapse" data-target="#collapseOne ">Home</button>
+</div>
+         <div id="collapseOne" class="collapse show " data-parent="#accordionExample">
+	<div class="card-body">Sahil Nair, 22, He is currently doing B-Tech in Computer Science Engineering from SRM University.Where would life take him now was his fear. He was talented but couldn’t find his way out because he didn’t just want a 9-5 job.</div>
+</div>
+</div>
+            <div class="card">
+		<div class="card-header">
+
+<button class="btn btn-link btn-block text-left collapsed" data-toggle="collapse" data-target="#collapseSecond ">Achievements</button>
+</div>
+         <div id="collapseSecond" class="collapse  " data-parent="#accordionExample">
+	<div class="card-body">Collaborated with Rapido – Bike Taxi App. His blogging journey started when he was 20 and he’s known for his styles in this blogging industry. His take of fashion is very unique from other bloggers where he wears Coat, Blazers, Formal Dress. He has 5K+ Followers on Instagram. He has climbed the heights of success one step at a time. It was 2018 when he started posting his looks on Instagram & Facebook Page.
+</div>
+</div>
+</div>
+          <div class="card">
+		<div class="card-header">
+
+<button class="btn btn-link btn-block text-left collapsed" data-toggle="collapse" data-target="#collapseThird ">About Sahil Nair</button>
+</div>
+         <div id="collapseThird" class="collapse" data-parent="#accordionExample">
+	<div class="card-body">Sahil Nair, 22, He is currently doing B-Tech in Computer Science Engineering from SRM University.Where would life take him now was his fear. He was talented but couldn’t find his way out because he didn’t just want a 9-5 job. He was born for something different.He has been recognized as “fashionwithsahil”.Unique style is Sahil’s perfection of lifestyle and fashion. You will definitely want to take inspiration from his unique way of styling. “fashionwithsahil” is his blog which has inspired many men out there for styles. His style speaks about his dressing sense.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+           <div class="container mt-3">
+           <h2>Collapse Methods</h2>
+  
+<button type="button" class="btn btn-primary">Toggle</button>
+<button type="button" class="btn btn-success">Show</button>
+<button type="button" class="btn btn-warning">Hide</button> 
+    
+<div class="collapse" id="NewCollapse">Sahil Nair, 22, He is currently doing B-Tech in Computer Science Engineering from SRM University.Where would life take him now was his fear. He was talented but couldn’t find his way out because he didn’t just want a 9-5 job. He was born for something different.He has been recognized as “fashionwithsahil”.Unique style is Sahil’s perfection of lifestyle and fashion. You will definitely want to take inspiration from his unique way of styling. “fashionwithsahil” is his blog which has inspired many men out there for styles. His style speaks about his dressing sense.
+</div>
+</div>
+
+<script>
+$(document).ready(function(){
+  $(".btn-primary").click(function(){
+    $("#NewCollapse").collapse('toggle');
+  });
+  $(".btn-success").click(function(){
+    $("#NewCollapse").collapse('show');
+  });
+  $(".btn-warning").click(function(){
+    $("#NewCollapse").collapse('hide');
+  });
+});
+</script>
+</body>
+</html>

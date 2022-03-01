@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Forms</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+<div class="row">
+<div class="col-6 border">
+<div class="input-group my-3">
+  <span class="input-group-text" id="basic-addon1">Username</span>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<div class="my-3">
+  <label for="exampleFormControlInput1" class="form-label">Email Address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+
+<div class="my-3">
+<label for="exampleFormControlInput1" class="form-label">Read Only</label>
+<input class="form-control" type="text" value="Disabled readonly input" aria-label="Disabled input example" disabled readonly>
+</div>
+
+<div class="my-3">
+  <label for="formFile" class="form-label">Default file input example</label>
+  <input class="form-control" type="file" id="formFile">
+</div>
+
+</div>
+
+<div class="col-6 border">
+
+<div class="row">
+<div class="col my-3">
+<input type="text" class="form-control" placeholder="First name" aria-label="First name">
+ </div>
+ <div class="col my-3">
+ <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+ </div>
+</div>
+
+<div class="row">
+<div class="col-12 border">
+<div class="row">
+<div class="col-4">
+<select class="form-select-sm" aria-label="Default select example">
+  <option selected>Select City</option>
+  <option value="1">Delhi</option>
+  <option value="2">Mumbai</option>
+  <option value="3">Bangalore</option>
+</select>
+</div>
+
+<div class="col-4">
+<select class="form-select-sm" aria-label="Default select example">
+  <option selected>Select State</option>
+  <option value="1">Delhi</option>
+  <option value="2">Mumbai</option>
+  <option value="3">Bangalore</option>
+</select>
+</div>
+
+<div class="col-4">
+    
+<input type="text" class="form-control" id="inputZip" placeholder="Enter Pin">
+</div> 
+</div>
+</div>
+</div>
+
+<label for="customRange2" class="form-label my-3">Amount</label>
+<input type="range" class="form-range" min="0" max="100" id="customRange2">
+
+</div>
+</div>
+</div>	
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
